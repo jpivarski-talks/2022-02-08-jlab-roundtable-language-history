@@ -1,0 +1,23 @@
+Introduce new package pyroot by Pere Mato & Wim Lawrijsen.
+
+pyroot is a Python interface to any class having a CINT dictionary.
+pyroot is an optional package. It can be selected at configure time with, eg
+ --enable-explicitlink \
+ --enable-python \
+ --with-python-incdir=/usr/local/include/python2.3 \
+ --with-python-libdir=/usr/local/lib/python2.3 \
+
+enable-explicitlink is mandatory to build pyroot.
+
+Note that python2.3 or above is required. You can download it from
+http://www.python.org
+
+The installation is currently certified only on Linux with gcc3.2.
+python/ROOT tutorials are available in $ROOTSYS/tutorials/*.py.
+To run the python tutorials, you can do
+  setenv PYTHONDIR $ROOTSYS/pyroot:$ROOTSYS/lib
+  cd $ROOTSYS/tutorials
+  python hsimple.py
+
+
+git-svn-id: http://root.cern.ch/svn/root/trunk@8699 27541ba8-7e3a-0410-8455-c3a389f83636
