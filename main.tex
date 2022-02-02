@@ -58,9 +58,52 @@
 
 % We are planning the meetings for 2022 and we would like to organise a meeting focused on the programming languages that are used in the community. The idea is to cover a history of languages and their adoption, the modern C++ ecosystem and take a look at Julia as well. We wanted to invite you to give a 20’ talk on the history and adoption of languages in NHEP, building on talks you gave before and (IMO) covering things like the early use and deprecation of Fortran, the rise of C++ and the adoption of Python as an equally important language in the community (of course, you have the freedom to focus on what you would like).
 
-\begin{frame}{First slide}
+\begin{frame}{\mbox{ }}
+\large
 \vspace{0.5 cm}
-HERE
+This talk is a historical overview of programming languages widely used in NHEP, especially what motivated each language's adoption.
+
+\vspace{1 cm}
+\uncover<2->{There have always been physicists at the edge, trying out new languages, but most physicists have only ever used one or two; the field is slow to change.}
+
+\vspace{1 cm}
+\uncover<3->{\textcolor{darkblue}{Thesis:} (1) change motivated more by ``pain points'' than incremental benefits,}
+
+\vspace{0.2 cm}
+\uncover<4->{\phantom{Thesis:}\hspace{0.035 cm} (2) hysteresis matters: first ``good enough'' solution wins.}
 \end{frame}
+
+\begin{frame}{Three major transitions (so far)}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{programming-languages.pdf}
+\end{columns}
+
+\large
+\vspace{0.5 cm}
+Adoption of
+
+\begin{description}
+\item[\textcolor{black}{Fortran:}] \textcolor{darkblue}{immediate;} \textcolor{darkgreen}{for syntax and portability;} \textcolor{violet}{no infrastructure to replace}
+\item[\textcolor{black}{C++:}] \textcolor{darkblue}{long overdue;} \textcolor{darkgreen}{for data structures;} \textcolor{violet}{replaced infrastructure in a burst}
+\item[\textcolor{black}{Python:}] \textcolor{darkblue}{slowly overtook the alternatives;} \textcolor{darkgreen}{for interactivity;} \textcolor{violet}{different niche}
+\end{description}
+\end{frame}
+
+\begin{frame}{NHEP was an early adopter of digital computers}
+\Large
+\vspace{0.35 cm}
+\begin{columns}
+\column{1.05\linewidth}
+One of the very first applications was Monte Carlo (neutron transport).
+
+\vspace{-0.2 cm}
+\begin{center}
+\includegraphics[width=0.78\linewidth]{manhattan-project-physicists-and-computer.jpg}
+\end{center}
+\end{columns}
+\end{frame}
+
+
 
 \end{document}
