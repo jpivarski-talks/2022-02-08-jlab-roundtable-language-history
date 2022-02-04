@@ -467,13 +467,13 @@ So actually, NHEP needs:
 
 \large
 \vspace{0.5 cm}
-\uncover<2->{HYDRA/ZEBRA/etc.\ approached these as one problem.}
+\uncover<2->{HYDRA/ZEBRA/etc.\ approached these as {\it a single} problem.}
 
 \vspace{0.25 cm}
 \uncover<3->{In Java, \textcolor{darkblue}{(1--2)} is a language problem, \textcolor{darkblue}{(3--4)} is for databases.}
 
 \vspace{0.25 cm}
-\uncover<4->{Object databases focus on \textcolor{darkblue}{(4)} as the real problem\ldots}
+\uncover<4->{Object databases focus on \textcolor{darkblue}{(4)}\ldots}
 \end{frame}
 
 \begin{frame}{\mbox{ }}
@@ -483,7 +483,7 @@ So actually, NHEP needs:
 So it wasn't just a matter of adding another language to the mix.
 
 \vspace{1 cm}
-The whole infrastructure had to change.
+The whole infrastructure, including I/O, had to change.
 
 \vspace{1 cm}
 \textcolor{darkblue}{You only want to do that once!}
@@ -541,10 +541,10 @@ Columnar, nested data was a ROOT feature 15 years earlier.
 NHEP adoption of C++ (or similar) was held back by the fact that we had unique infrastructure.
 
 \vspace{0.75 cm}
-\uncover<2->{Data structures are important, but so is serialization.}
+\uncover<2->{It's important to have data structures in the language, but also on disk.}
 
 \vspace{0.75 cm}
-\uncover<3->{Our solutions were both more advanced and less modular than others.}
+\uncover<3->{Our solutions were both {\it more advanced} and {\it less modular} than others.}
 
 \vspace{0.75 cm}
 \uncover<4->{Many options considered in late 1990's; C++ with ROOT I/O became dominant.}
@@ -569,18 +569,26 @@ NHEP adoption of C++ (or similar) was held back by the fact that we had unique i
 \end{frame}
 
 \begin{frame}{\mbox{ }}
-\vspace{0.5 cm}
+\vspace{0.25 cm}
 \Large
 NHEP has a history of custom solutions for interactivity: SPEAKEASY, Minuit, PAW, KUIP, CINT, Cling\ldots
 
-\vspace{1 cm}
-But the number of industry solutions is also vast: awk, tcl, perl\ldots
+\vspace{0.5 cm}
+\begin{uncoverenv}<2->
+But the number of industry solutions is also vast.
+
+\vspace{0.25 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/wikipedia-interpreted-languages.png}
+\end{columns}
+\end{uncoverenv}
 \end{frame}
 
 \begin{frame}{In recent years, the industry has consolidated on Python}
 \large
 \vspace{0.25 cm}
-Python is currently leading every ``most popular programming language'' index.
+\textcolor{darkblue}{Python is currently leading every ``most popular programming language'' index.}
 
 \vspace{0.25 cm}
 \begin{columns}[t]
@@ -620,23 +628,19 @@ Python is currently leading every ``most popular programming language'' index.
 \end{frame}
 
 \begin{frame}{Including data analytics and especially machine learning}
-\vspace{0.65 cm}
+\large
+\vspace{0.25 cm}
+\textcolor{darkblue}{Correlated words in Google searches (Google Trends).}
+
+\vspace{0.15 cm}
 \includegraphics[width=\linewidth]{PLOTS/analytics-by-language.pdf}
 \end{frame}
 
-\begin{frame}{Python use has also been rising---steadily---in NHEP}
+\begin{frame}{\only<1>{Python use has also been rising---steadily---in NHEP}\only<2>{Since {\it before} the return of machine learning}}
 \vspace{0.15 cm}
 \begin{columns}
 \column{1.1\linewidth}
-\includegraphics[width=\linewidth]{PLOTS/chep-papers-language-2.pdf}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Since {\it before} the return of machine learning}
-\vspace{0.15 cm}
-\begin{columns}
-\column{1.1\linewidth}
-\includegraphics[width=\linewidth]{PLOTS/chep-papers-ml.pdf}
+\only<1>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-language-2.pdf}}\only<2>{\includegraphics[width=\linewidth]{PLOTS/chep-papers-ml.pdf}}
 \end{columns}
 \end{frame}
 
@@ -769,6 +773,14 @@ Adoption of
 \begin{columns}
 \column{1.1\linewidth}
 \includegraphics[width=\linewidth]{PLOTS/chep-papers-package-2.pdf}
+\end{columns}
+\end{frame}
+
+\begin{frame}{More CHEP history}
+\vspace{0.15 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{PLOTS/chep-papers-accelerator.pdf}
 \end{columns}
 \end{frame}
 
